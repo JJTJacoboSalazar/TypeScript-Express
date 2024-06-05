@@ -1,0 +1,3 @@
+npm run tsc -- --init
+
+"tsc": "tsc"
