@@ -5,10 +5,10 @@ app.use(express.json()); // for parsing application/json
 
 const PORT = 3000;
 
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
     console.log('Hello World!');
     
-  res.send('Hello World!');
+  res.send('Hello World!' + ' ' + new Date().toLocaleDateString());
 });
 
 app.listen(PORT, () => {
