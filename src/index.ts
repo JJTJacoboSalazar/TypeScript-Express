@@ -8,7 +8,7 @@ const PORT = 3000;
 app.get('/', (_req, res) => {
     console.log('Hello World!');
     
-  res.send('Hello World!' + ' ' + new Date().toLocaleDateString());
+  res.send('Hello World!');
 });
 
 app.listen(PORT, () => {
