@@ -10,6 +10,6 @@ export interface DiaryEntry {
 }
 
 // Add a new interface SpecialDiaryEntry that extends DiaryEntry and has a new property flightNumber.
-interface SpecialDiaryEntry extends DiaryEntry {
-    flighNumber: number;
-}
+// interface SpecialDiaryEntry extends DiaryEntry {
+//     flighNumber: number;
+// }
