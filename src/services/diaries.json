@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "date": "2021-09-01",
+        "weather": "sunny",
+        "visibility": "good",
+        "comment": "It was a good day"
+    },
+    {
+        "id": 2,
+        "date": "2021-09-02",
+        "weather": "cloudy",
+        "visibility": "good",
+        "comment": "It was a good day"
+    },
+    {
+        "id": 3,
+        "date": "2021-09-03",
+        "weather": "rainy",
+        "visibility": "bad",
+        "comment": "It was a bad day"
+    },
+    {
+        "id": 4,
+        "date": "2021-09-04",
+        "weather": "sunny",
+        "visibility": "good",
+        "comment": "It was a good day"
+    },
+    {
+        "id": 5,
+        "date": "2021-09-05",
+        "weather": "sunny",
+        "visibility": "good",
+        "comment": "It was a good day"
+    }
+]
