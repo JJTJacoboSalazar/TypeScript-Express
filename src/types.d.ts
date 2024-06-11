@@ -14,4 +14,7 @@ export interface DiaryEntry {
 //     flighNumber: number;
 // }
 
-export type NonSensitiveDiaryEntry = Pick<DiaryEntry, 'id' | 'date' | 'weather' | 'visibility'>;
+
+// export type NonSensitiveDiaryEntry = Pick<DiaryEntry, 'id' | 'date' | 'weather' | 'visibility'>;
+
+export type NonSensitiveDiaryEntry = Omit<DiaryEntry, 'comment'>;
