@@ -1,4 +1,5 @@
 npm run tsc -- --init
 npm i @types/express
 npm i ts-node-dev -D
+npm i ts-standard
 "tsc": "tsc"
