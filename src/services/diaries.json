@@ -1,37 +1,142 @@
 [
     {
         "id": 1,
-        "date": "2021-09-01",
+        "date": "2017-04-10",
         "weather": "sunny",
-        "visibility": "good",
-        "comment": "It was a good day"
+        "visibility": "great",
+        "comment": "A perfect day for flying"
     },
     {
         "id": 2,
-        "date": "2021-09-02",
-        "weather": "cloudy",
-        "visibility": "good",
-        "comment": "It was a good day"
+        "date": "2017-04-15",
+        "weather": "rainy",
+        "visibility": "poor",
+        "comment": "Had to delay takeoff due to rain"
     },
     {
         "id": 3,
-        "date": "2021-09-03",
-        "weather": "rainy",
-        "visibility": "bad",
-        "comment": "It was a bad day"
+        "date": "2017-04-20",
+        "weather": "stormy",
+        "visibility": "ok",
+        "comment": "Turbulent flight, but managed well"
     },
     {
         "id": 4,
-        "date": "2021-09-04",
-        "weather": "sunny",
+        "date": "2017-05-11",
+        "weather": "cloudy",
         "visibility": "good",
-        "comment": "It was a good day"
+        "comment": "I almost failed the landing but I survived"
     },
     {
         "id": 5,
-        "date": "2021-09-05",
+        "date": "2017-05-13",
+        "weather": "snowy",
+        "visibility": "poor",
+        "comment": "First time flying in snow, challenging but fun"
+    },
+    {
+        "id": 6,
+        "date": "2017-05-22",
+        "weather": "windy",
+        "visibility": "ok",
+        "comment": "Strong crosswinds made landing tricky"
+    },
+    {
+        "id": 7,
+        "date": "2017-06-01",
+        "weather": "foggy",
+        "visibility": "poor",
+        "comment": "Low visibility, relied heavily on instruments"
+    },
+    {
+        "id": 8,
+        "date": "2017-06-15",
+        "weather": "hailing",
+        "visibility": "ok",
+        "comment": "Unexpected hail, but no damage to the plane"
+    },
+    {
+        "id": 9,
+        "date": "2017-06-20",
+        "weather": "thunderstorm",
+        "visibility": "poor",
+        "comment": "Electrifying flight, quite literally!"
+    },
+    {
+        "id": 10,
+        "date": "2017-07-02",
+        "weather": "tornado",
+        "visibility": "poor",
+        "comment": "Saw a tornado from a distance, steered clear"
+    },
+    {
+        "id": 11,
+        "date": "2017-07-12",
         "weather": "sunny",
+        "visibility": "great",
+        "comment": "Smooth sailing, or rather, flying"
+    },
+    {
+        "id": 12,
+        "date": "2017-07-23",
+        "weather": "rainy",
         "visibility": "good",
-        "comment": "It was a good day"
+        "comment": "Rainy but not too bad, visibility was decent"
+    },
+    {
+        "id": 13,
+        "date": "2017-08-05",
+        "weather": "stormy",
+        "visibility": "ok",
+        "comment": "Managed to avoid the worst of the storm"
+    },
+    {
+        "id": 14,
+        "date": "2017-08-16",
+        "weather": "cloudy",
+        "visibility": "great",
+        "comment": "Overcast but great visibility"
+    },
+    {
+        "id": 15,
+        "date": "2017-08-27",
+        "weather": "snowy",
+        "visibility": "ok",
+        "comment": "Cold but clear, a beautiful day for flying"
+    },
+    {
+        "id": 16,
+        "date": "2017-09-07",
+        "weather": "windy",
+        "visibility": "good",
+        "comment": "Windy, but a good test of skill"
+    },
+    {
+        "id": 17,
+        "date": "2017-09-18",
+        "weather": "foggy",
+        "visibility": "poor",
+        "comment": "Very challenging visibility, but landed safely"
+    },
+    {
+        "id": 18,
+        "date": "2017-09-29",
+        "weather": "hailing",
+        "visibility": "ok",
+        "comment": "A bit of hail, but nothing the plane couldn't handle"
+    },
+    {
+        "id": 19,
+        "date": "2017-10-10",
+        "weather": "thunderstorm",
+        "visibility": "good",
+        "comment": "Dramatic skies but a smooth flight"
+    },
+    {
+        "id": 20,
+        "date": "2017-10-21",
+        "weather": "tornado",
+        "visibility": "great",
+        "comment": "Avoided the tornado, beautiful skies afterwards"
     }
 ]
