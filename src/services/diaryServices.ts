@@ -7,8 +7,12 @@ export const getEntries = (): Array<DiaryEntry> => {
   return diaries;
 }
 
-export const findById = (id: number): DiaryEntry | undefined => {
+export const findById = (id: number): NonSensitiveDiaryEntry | undefined => {
   const entry = diaries.find(d => d.id === id);
+  if(entry){
+    const {comment, ...restOfDiary} = entry;
+    return restOfDiary;
+  }
   return entry;
 }
 
