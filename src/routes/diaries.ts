@@ -1,5 +1,6 @@
 import express from 'express';
 import {getEntriesWithoutSensitiveInfo, findById} from '../services/diaryServices';
+import diaryEntries from '../services/diaries';
 
 const router = express.Router();
 
@@ -16,8 +17,10 @@ router.get('/:id', (req, res) => {
   }
 })
 
-router.post('/', (_req, res) => {
-    res.send('Creating a new diary!');
+router.post('/', (req, res) => {
+    const {date, weather, visibility, comment} = req.body;
+    const newDiaryEntry = diaryEntries.addEntry({date, weather, visibility, comment});
+    res.json(newDiaryEntry);
     });
 
 
