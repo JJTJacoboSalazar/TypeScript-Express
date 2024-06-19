@@ -1,4 +1,4 @@
-import { DiaryEntry, NonSensitiveDiaryEntry, Visibility, Weather } from '../types';
+import { DiaryEntry, NonSensitiveDiaryEntry} from '../types';
 import diaryData from './diaries.json';
 
 const diaries: Array<DiaryEntry> = diaryData as Array<DiaryEntry>;
@@ -20,14 +20,16 @@ export const getEntriesWithoutSensitiveInfo = (): NonSensitiveDiaryEntry[] => {
   return diaries.map(({ id, date, weather, visibility }) => ({ id, date, weather, visibility }));
 }
 
-export const addEntry = (date: string, weather: Weather, visibility: Visibility, comment: string): DiaryEntry => {
-  const newDiaryEntry = {
-    id: Math.max(...diaries.map(d => d.id)) + 1,
-    date,
-    weather,
-    visibility,
-    comment
+export const addDiary = (newDiaryEntry: DiaryEntry): DiaryEntry => {
+  // Calcula el nuevo ID sin considerar un posible ID en newDiaryEntry
+  const newId = Math.max(0, ...diaries.map(d => d.id)) + 1; // Asegura que el ID siempre sea positivo
+
+  // Crea el nuevo diaryEntry sin sobrescribir el ID calculado
+  const diaryEntry = {
+    ...newDiaryEntry,
+    id: newId, // Establece el ID después para asegurar que se use el nuevo ID
   };
-  diaries.push(newDiaryEntry);
-  return newDiaryEntry;
-};
+
+  diaries.push(diaryEntry);
+  return diaryEntry;
+}
