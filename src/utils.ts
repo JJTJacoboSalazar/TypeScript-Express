@@ -44,15 +44,14 @@ const parseVisibility = (visibility: any): Visibility => {
     return visibility;
 }
 
-const toNewDiaryEntry = (object: any): typeof newDiaryEntry => {
-    const newEntry: typeof newDiaryEntry = {
-        comment: parseComment(object.comment),
+const toNewDiaryEntry = (object: any): newDiaryEntry => {
+    const newEntry: newDiaryEntry = {
         date: parseDate(object.date),
         weather: parseWeather(object.weather),
-        visibility: parseVisibility(object.visibility)
+        visibility: parseVisibility(object.visibility),
+        comment: parseComment(object.comment)
     }
     return newEntry;
-
 }
 
 export default toNewDiaryEntry;

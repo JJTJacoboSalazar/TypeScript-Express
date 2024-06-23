@@ -30,7 +30,6 @@ export interface DiaryEntry {
     comment: string
 }
 
-
 // Add a new interface SpecialDiaryEntry that extends DiaryEntry and has a new property flightNumber.
 // interface SpecialDiaryEntry extends DiaryEntry {
     //     flighNumber: number;
@@ -39,5 +38,5 @@ export interface DiaryEntry {
     
     // export type NonSensitiveDiaryEntry = Pick<DiaryEntry, 'id' | 'date' | 'weather' | 'visibility'>;
     
-export const newDiaryEntry = Omit<DiaryEntry, 'id'>;
+export type newDiaryEntry = Omit<DiaryEntry, 'id'>;
 export type NonSensitiveDiaryEntry = Omit<DiaryEntry, 'comment'>;
